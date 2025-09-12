@@ -7,7 +7,7 @@
         margin: 0; /*  de css niet veranderen pls, het is super fragiel :(  */
       }
       .footer {
-        background-color: red;
+        background-color: gainsboro;
         padding: 50px;
         width: 100%;
       }
