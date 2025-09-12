@@ -4,13 +4,19 @@
     <x-head/>
     <style>
       body {
-        margin: 0; /*  de css niet veranderen pls, het is super fragiel :(  */
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .container {
+        margin: 0 auto;
       }
       .footer {
         background-color: gainsboro;
         padding: 50px;
         width: 100%;
-        
+        margin-top: auto;
       }
     </style>
 </head>
@@ -19,7 +25,7 @@
 <x-navbar/>
 
 <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
         <div class="col-md-8">
             <x-header/>
 
@@ -45,15 +51,13 @@
                 {{ $breadcrumb ?? '' }}
             </ul>
         </div>
-    </div> <!-- einde row -->
-</div> <!-- einde container -->
+    </div>
+</div>
 
-<!-- footer buiten container -->
 <div class="footer">
     <x-footer></x-footer>
 </div>
 
-<!-- JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="{{ asset('/js/app.js') }}"></script>
 
