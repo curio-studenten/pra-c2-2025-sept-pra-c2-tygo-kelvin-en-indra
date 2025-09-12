@@ -1,5 +1,10 @@
 <x-layouts.app>
-
+<style>
+    .footer {
+        position: absolute;
+        bottom: 0;
+    }
+</style>
     <x-slot:head>
         <meta name="robots" content="index, nofollow">
     </x-slot:head>

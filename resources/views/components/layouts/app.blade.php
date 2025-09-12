@@ -10,8 +10,7 @@
         background-color: gainsboro;
         padding: 50px;
         width: 100%;
-        position: absolute;
-        bottom: 0;
+        
       }
     </style>
 </head>
