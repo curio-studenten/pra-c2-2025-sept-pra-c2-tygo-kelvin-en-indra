@@ -4,9 +4,20 @@
     <x-head/>
 </head>
 <body>
+    <style>
+.footer {
+  background-color: red;
+  padding: 50px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+
+    </style>
 
 <x-navbar/>
-
 <div class="container">
     <div class="row">
 
@@ -27,21 +38,22 @@
 
             <ul class="breadcrumb">
                 <li>
-					<a href="/" title="{{ __('misc.home_alt') }}" alt="{{ __('misc.home_alt') }}">{{ __('misc.home') }}</a>
-				</li>
+                    <a href="/" title="{{ __('misc.home_alt') }}" alt="{{ __('misc.home_alt') }}">{{ __('misc.home') }}</a>
+                </li>
                 {{ $breadcrumb ?? '' }}
             </ul>
 
         </div>
 
-        <div class="row">
-            <x-footer/>
-        </div>
+    </div> <!-- einde row -->
 
+    <div class="footer">
+        <x-footer>
+
+        </x-footer>
     </div>
 
-
-</div>
+</div> <!-- einde container -->
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
