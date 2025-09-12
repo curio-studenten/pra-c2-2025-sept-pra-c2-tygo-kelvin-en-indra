@@ -4,7 +4,7 @@
     <x-head/>
     <style>
       body {
-        margin: 0; /*  niet veranderen pls, het is super fragiel :(  */
+        margin: 0; /*  de css niet veranderen pls, het is super fragiel :(  */
       }
       .footer {
         background-color: red;
