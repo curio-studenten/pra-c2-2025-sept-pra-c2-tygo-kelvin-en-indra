@@ -228,6 +228,9 @@ label {
 
 button {
     display: inline-block;
+    color: black;
+}
+button:hover{
     color: #3490dc;
 }
 li{
