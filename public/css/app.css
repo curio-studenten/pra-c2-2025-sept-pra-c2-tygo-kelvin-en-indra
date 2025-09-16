@@ -370,7 +370,8 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-    font-size: 2.25rem;
+    font-size: 3.25rem;
+    font-weight: bold;
 }
 
 h2, .h2 {
@@ -1083,6 +1084,7 @@ pre code {
     .col-md-4 {
         flex: 0 0 33.3333333333%;
         max-width: 33.3333333333%;
+        background-color:#e9ecef;
     }
 
     .col-md-5 {
