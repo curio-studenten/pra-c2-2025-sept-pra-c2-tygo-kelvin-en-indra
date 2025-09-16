@@ -50,8 +50,36 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+article, aside, figcaption, figure, header, hgroup, main, nav, section {
     display: block;
+}
+
+ footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialMedia {
+    display: grid;
+    text-align: center;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.aboutUs {
+    text-align: center;
+    font-size: 14px;
+    color: #6c757d;
+    width: auto;
+    height: 100px;
+}
+
+.aboutUs:hover {
+    transform: scale(1.1);
+}
+
+.button-grow {
+  transition: all 0.3s ease-in-out;
 }
 
 body {
@@ -84,6 +112,7 @@ p {
     margin-top: 0;
     margin-bottom: 1rem;
 }
+
 
 abbr[title],
 abbr[data-original-title] {
