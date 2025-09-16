@@ -35,7 +35,7 @@
                             $header_first_letter = $current_first_letter
                             ?>
                             <li>
-                                <a href="/{{ $brand->id }}/{{ $brand->getNameUrlEncodedAttribute() }}/">{{ $brand->name }}</a>
+                                <a href="/{{ $brand->id }}/{{ $brand->getNameUrlEncodedAttribute() }}/"><button>{{ $brand->name }}</button></a>
                             </li>
                         @endforeach
                     </ul>

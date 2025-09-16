@@ -107,6 +107,8 @@ ul,
 dl {
     margin-top: 0;
     margin-bottom: 1rem;
+    list-style: none;
+    padding: 0px;
 }
 
 ol ol,
@@ -225,7 +227,11 @@ label {
 }
 
 button {
-    border-radius: 0;
+    display: inline-block;
+    color: #3490dc;
+}
+li{
+    margin-bottom: 7px;
 }
 
 button:focus:not(:focus-visible) {
@@ -10025,3 +10031,4 @@ a.text-dark:hover, a.text-dark:focus {
     color: #ccc;
     content: "/ ";
 }
+
