@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('name');
             $table->bigInteger('filesize');
             $table->text('originUrl');
+            $table->int('numberOfClicked');   //aantal keer geklikt
             $table->string('filename')->nullable();
             $table->string('downloadedServer')->nullable();
             $table->timestamps();
