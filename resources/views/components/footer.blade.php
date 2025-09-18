@@ -7,9 +7,9 @@
     <p>Email: 4s@awesome.com</p>
     <p>Phone: +31 6 12345678</p>
     </div>
-    <button class="aboutUs">
-        <a href="https://4s-manuals.com">over ons</a>
-    </button>
+    <div class="aboutUs">
+        <a href="http://stackoverflow.com"><button>Over ons</button></a>
+    </div>
 
      <div class="socialMedia">
          <a href="https://www.facebook.com/4s.manuals">Facebook</a>
