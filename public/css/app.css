@@ -2476,7 +2476,14 @@ a.btn.disabled,
 fieldset:disabled a.btn {
     pointer-events: none;
 }
-
+.Center{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.Center label{
+    margin-top: 10pxx;
+}
 .btn-primary {
     color: #fff;
     background-color: #3490dc;

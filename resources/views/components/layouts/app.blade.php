@@ -35,6 +35,10 @@
                      alt="{{ __('misc.home_alt') }}">{{ __('misc.home') }}</a>
                 </li>
                 {{ $breadcrumb ?? '' }}
+
+                <li>
+                    <a href="contact">Contact</a>
+                </li>
             </ul>
 
             @if ( isset($_GET['q']) )
@@ -49,6 +53,10 @@
                        alt="{{ __('misc.home_alt') }}">{{ __('misc.home') }}</a>
                 </li>
                 {{ $breadcrumb ?? '' }}
+
+                <li>
+                    <a href="contact">Contact</a>
+                </li>
             </ul>
         </div>
     </div>
