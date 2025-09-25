@@ -45,6 +45,21 @@
                 <?php unset($header_first_letter); ?>
             @endforeach
 
+        <div class="leaderboard-brands">
+             <h2>Top 10 Meest Bekeken 🏆 Handleidingen 🏆</h2>
+              <ol>
+             @foreach($topManuals as $manual)
+                 <li>
+                     <a href="/{{ $manual->brand_id }}/{{ $manual->brand->getNameUrlEncodedAttribute() }}/{{ $manual->id }}/">
+                          {{ $manual->name }}
+                        </a>
+                        – {{ $manual->visits }} keer bekeken
+                    </li>
+             @endforeach
+            </ol>
+        </div>
+
+
         </div>
     </div>
 </x-layouts.app>

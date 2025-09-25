@@ -9,10 +9,20 @@ class Manual extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'filesize', 'originUrl', 'filename', 'downloadedServer', 'visits', 'brand_id'];
+    // Mass-assignable velden
+    protected $fillable = [
+        'name',
+        'filesize',
+        'originUrl',
+        'filename',
+        'downloadedServer',
+        'visits',
+        'brand_id'
+    ];
 
     /**
      * Relatie naar Brand
+     * Een manual behoort tot één brand
      */
     public function brand()
     {
@@ -25,18 +35,16 @@ class Manual extends Model
     public function getFilesizeHumanReadableAttribute()
     {
         $size = $this->filesize;
-        $unit = "";
 
-        if ((!$unit && $size >= 1<<30) || $unit == "GB")
-            $value = number_format($size/(1<<30), 2) . " GB";
-        elseif ((!$unit && $size >= 1<<20) || $unit == "MB")
-            $value = number_format($size/(1<<20), 2) . " MB";
-        elseif ((!$unit && $size >= 1<<10) || $unit == "KB")
-            $value = number_format($size/(1<<10), 2) . " KB";
-        else
-            $value = number_format($size) . " bytes";
-
-        return $value;
+        if ($size >= 1 << 30) {
+            return number_format($size / (1 << 30), 2) . ' GB';
+        } elseif ($size >= 1 << 20) {
+            return number_format($size / (1 << 20), 2) . ' MB';
+        } elseif ($size >= 1 << 10) {
+            return number_format($size / (1 << 10), 2) . ' KB';
+        } else {
+            return number_format($size) . ' bytes';
+        }
     }
 
     /**
@@ -52,12 +60,14 @@ class Manual extends Model
      */
     public function getUrlAttribute()
     {
+        // Standaard gebruik originUrl
         return $this->originUrl;
 
-        // Als je later CDN wilt gebruiken, kun je dit weer activeren:
+        // Optioneel voor CDN:
         /*
-        if (!empty($this->filename))
+        if (!empty($this->filename)) {
             return 'http://cdn.downloadyourmanual.com/' . $this->filename;
+        }
 
         return $this->originUrl;
         */

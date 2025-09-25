@@ -33,13 +33,16 @@ use App\Http\Controllers\ManualController;
 use App\Http\Controllers\ProductCategoryController;
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\LocaleController;
+use App\Models\Manual;
 
 // Homepage
 Route::get('/', function () {
     $brands = Brand::all()->sortBy('name');
+    $topManuals = Manual::orderByDesc('visits')->take(10)->get();
+    
     $name = 'D292003';
-    return view('pages.homepage', compact('brands', 'name'));
-});
+    return view('pages.homepage', compact('brands', 'topManuals', 'name'));
+})->name('home');
 
 
 Route::get('/contact', function () {
