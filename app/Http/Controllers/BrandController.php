@@ -14,9 +14,12 @@ class BrandController extends Controller
 
     $manuals = $brand->manuals;
 
+    $top5Manuals = Manual::orderByDesc('visits')->where('brand_id', $brand_id)->take(5)->get();
+
     return view('pages.brand_view', [
         'brand' => $brand,
         'manuals' => $manuals,
+        'top5Manuals' => $top5Manuals
     ]);
 }
 

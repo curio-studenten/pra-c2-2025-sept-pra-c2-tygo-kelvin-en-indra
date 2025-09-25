@@ -19,7 +19,7 @@
         <div class="leaderboard-brands">
             <h2>Top 10 Meest Bekeken 🏆 Handleidingen 🏆</h2>
             <ol>
-                @foreach($topManuals as $manual)
+                @foreach($top10Manuals as $manual)
                     <li>
                         <a href="/{{ $manual->brand_id }}/{{ $manual->brand->getNameUrlEncodedAttribute() }}/{{ $manual->id }}/">
                             {{ $manual->name }}
