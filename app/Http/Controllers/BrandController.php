@@ -8,16 +8,16 @@ use App\Models\Manual;
 
 class BrandController extends Controller
 {
-    public function show($brand_id, $brand_slug)
-    {
+   public function show($brand_id, $brand_slug)
+{
+    $brand = Brand::findOrFail($brand_id);
 
-        $brand = Brand::findOrFail($brand_id);
-        $manuals = Manual::all()->where('brand_id', $brand_id);
+    $manuals = $brand->manuals;
 
-        return view('pages/manual_list', [
-            "brand" => $brand,
-            "manuals" => $manuals
-        ]);
+    return view('pages.brand_view', [
+        'brand' => $brand,
+        'manuals' => $manuals,
+    ]);
+}
 
-    }
 }

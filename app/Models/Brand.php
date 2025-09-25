@@ -9,10 +9,21 @@ class Brand extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['name'];
+
+    /**
+     * Relatie naar Manuals
+     */
+    public function manuals()
+    {
+        return $this->hasMany(Manual::class);
+    }
+
+    /**
+     * Voor nette URL's (bijv. spaties vervangen door -)
+     */
     public function getNameUrlEncodedAttribute()
     {
-        $name_url_encoded = str_replace('/','',$this->name);
-
-        return $name_url_encoded;
+        return urlencode($this->name);
     }
 }

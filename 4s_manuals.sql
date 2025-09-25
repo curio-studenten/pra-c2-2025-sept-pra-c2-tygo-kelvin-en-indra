@@ -57,7 +57,7 @@ INSERT INTO `brands` (`id`, `name`, `created_at`, `updated_at`) VALUES
 (26, 'Samsung', NULL, NULL),
 (27, 'Sony', NULL, NULL),
 (28, 'Pantech', NULL, NULL),
-(29, 'Citizen', NULL, NULL),
+(29, 'Citizen', NULL, NULL),crud
 (30, 'Aastra Telecom', NULL, NULL),
 (31, 'RCA', NULL, NULL),
 (32, 'VTech', NULL, NULL),
