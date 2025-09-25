@@ -56,7 +56,8 @@ article, aside, figcaption, figure, header, hgroup, main, nav, section {
 
  footer {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .socialMedia {
@@ -67,7 +68,7 @@ article, aside, figcaption, figure, header, hgroup, main, nav, section {
 }
 
 .aboutUs {
-    display: inline-block;
+    transition: all 0.3s ease-in-out;
     text-align: center;
     font-size: 24px;
     color: #6c757d;

@@ -3,10 +3,11 @@
 	© {{ __('misc.copyright') }}
 
     <div class="contactFooter">
-    <p>Contact us:</p>
-    <p>Email: 4s@awesome.com</p>
-    <p>Phone: +31 6 12345678</p>
+        <p>Contact us:</p>
+        <p>Email: 4s@awesome.com</p>
+        <p>Phone: +31 6 12345678</p>
     </div>
+
     <div class="aboutUs">
         <a href="http://stackoverflow.com"><button>Over ons</button></a>
     </div>
