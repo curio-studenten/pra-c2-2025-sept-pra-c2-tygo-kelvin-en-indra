@@ -1,52 +1,54 @@
 Telefoons & Mobiele apparaten:
 
-ALCATEL Mobile Phones – Mobiele telefoons
-Apple – Smartphones, tablets, computers
-BenQ – Smartphones, elektronica
-Huawei – Smartphones, telecom
-LG Electronics – Smartphones, elektronica
-Lenovo – Smartphones, computers
-Motorola – Smartphones
-Palm – PDA’s, smartphones
-Pantech – Mobiele telefoons
-Samsung – Smartphones, elektronica
-Sony – Smartphones, elektronica
-ZTE – Smartphones, telecom
+ALCATEL Mobile Phones
+Apple
+BenQ
+Huawei
+LG Electronics
+Lenovo
+Motorola
+Palm
+Pantech
+Samsung
+Sony
+ZTE
 
 Computers & Elektronica:
 
-AOC – Monitoren, elektronica
-AT&T – Telecom, netwerken
-Aastra Telecom – Telecomsystemen
-Carl Zeiss – Optica (camera lenzen, microscopen)
-Citizen – Horloges, elektronica
-Dell – Computers, laptops
-Fujitsu – Computers, servers
-GE (General Electric) – Elektronica, huishoudapparaten
-Garmin – Navigatie, GPS-apparaten
-IOGear – Computeraccessoires
-Kowa – Optica (verrekijkers, scopes)
-Toshiba – Computers, elektronica
-Uniden – Telecom, radio’s
-VTech – Telecom, educatieve elektronica
+AOC
+AT&T
+Aastra Telecom
+Carl Zeiss
+Citizen
+Dell
+Fujitsu
+GE (General Electric)
+Garmin
+IOGear
+Kowa
+Toshiba
+Uniden
+VTech
 
 Audio & Geluid:
 
-Crown Audio – Audioapparatuur (versterkers)
-DCM Speakers – Speakers
-DigiTech – Muziek-effecten, pedalen
-JBL – Speakers, audio
-MTX Audio – Speakers, car audio
-Musica – Audioapparatuur
-Pioneer – Audio, DJ-apparatuur, car audio
-RCA – Audio, elektronica
-Samson – Audioapparatuur (microfoons, versterkers)
-Yamaha – Audio, muziekinstrumenten
-Specialized / Overige Technologie
-Furuno – Maritieme elektronica (radar, sonar)
-Grizzly – Gereedschap, machines
-Humminbird – Visvinders, sonar
-Kohler – Sanitair, motoren
-Land Pride – Landbouwmachines
-ProForm – Fitnessapparatuur
-TPI Corporation – Verwarming/ventilatie apparatuur
+Crown Audio
+DCM Speakers
+DigiTech
+JBL
+MTX Audio
+Musica
+Pioneer
+RCA
+Samson
+Yamaha
+
+Specialized / Overige Technologie:
+
+Furuno
+Grizzly
+Humminbird
+Kohler
+Land Pride
+ProForm
+TPI Corporation
