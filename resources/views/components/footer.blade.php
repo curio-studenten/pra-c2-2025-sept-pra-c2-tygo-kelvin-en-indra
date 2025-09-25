@@ -2,6 +2,8 @@
 <footer>
 	© {{ __('misc.copyright') }}
 
+    <a class="navbar-brand" href="contact">Contact</a>
+
     <div class="contactFooter">
         <p>Contact us:</p>
         <p>Email: 4s@awesome.com</p>

@@ -36,9 +36,7 @@
                 </li>
                 {{ $breadcrumb ?? '' }}
 
-                <li>
-                    <a href="contact">Contact</a>
-                </li>
+
             </ul>
 
             @if ( isset($_GET['q']) )
@@ -54,9 +52,6 @@
                 </li>
                 {{ $breadcrumb ?? '' }}
 
-                <li>
-                    <a href="contact">Contact</a>
-                </li>
             </ul>
         </div>
     </div>
