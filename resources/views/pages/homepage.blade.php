@@ -6,7 +6,7 @@
         <p>{{ __('introduction_texts.homepage_line_3') }}</p>
     </x-slot:introduction_text>
 
-    <h1>Hello, {{ $name }}</h1>
+    <h3>Hello, {{ $name }}</h3>
 
     <h1>
         <x-slot:title>
