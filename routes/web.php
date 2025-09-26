@@ -36,11 +36,14 @@ use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\LocaleController;
 use App\Models\Manual;
 
-// Homepage
 Route::get( '/', [HomeController::class, 'index']);
 
 Route::get('/contact', function () {
     return view('pages.contact');
+});
+
+Route::get('/letter', function () {
+    return view('pages.filtered_data');
 });
 
 Route::get('/manual/{language}/{brand_slug}/', [RedirectController::class, 'brand']);
@@ -59,3 +62,8 @@ Route::get('/{brand_id}/{brand_slug}/{manual_id}/', [ManualController::class, 's
 
 // Generate sitemaps
 Route::get('/generateSitemap/', [SitemapController::class, 'generate']);
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/manual/{language}/{brand_slug}/', [RedirectController::class, 'brand'])
+     ->name('manual.brand');
