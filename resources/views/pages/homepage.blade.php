@@ -15,7 +15,7 @@
     </h1>
 
     <div class="container">
-
+<!----Maak dat de lijst met tekst mooi verdeeld is langwerpig------>
         <div class="leaderboard-brands">
             <h2>Top 10 Meest Bekeken 🏆 Handleidingen 🏆</h2>
             <ol>

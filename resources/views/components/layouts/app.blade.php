@@ -18,9 +18,33 @@
         width: 100%;
         margin-top: auto;
       }
-      .leaderboard-brands {
-        font-size: 0.7rem;
-      }
+    .leaderboard-brands {
+      font-size: 0.9rem;
+      height: 200px;
+      background-color: #e9ecef;
+      padding: 5px;
+      overflow-y: auto;
+      column-count: 3;
+      column-gap: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+  }
+
+  .leaderboard-brands h2 {
+      column-span: all;
+      text-align: center;
+      margin-bottom: 1rem;
+  }
+
+  .leaderboard-brands ol {
+      margin: 0;
+      padding: 0 1rem;
+  }
+
+  .leaderboard-brands li {
+      margin-bottom: 5px;
+      break-inside: avoid;
+  }
     </style>
 </head>
 <body>
