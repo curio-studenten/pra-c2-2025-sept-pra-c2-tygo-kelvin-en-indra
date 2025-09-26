@@ -19,7 +19,7 @@
         margin-top: auto;
       }
     .leaderboard-brands {
-      font-size: 0.9rem;
+      font-size: 0.75rem;
       height: 200px;
       background-color: #e9ecef;
       padding: 5px;
