@@ -58,7 +58,6 @@ article, aside, figcaption, figure, header, hgroup, main, nav, section {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: auto;
 }
 
 .socialMedia {
@@ -7660,7 +7659,7 @@ button.bg-dark:focus {
 .my-4 {
     margin-bottom: 1.5rem !important;
 
-    background-color: #e9ecef;
+    background-color: #e9ecef !important;
 }
 
 .ml-4,
