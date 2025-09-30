@@ -48,6 +48,7 @@
                 ]
             ];
         @endphp
+    </div>
 
 <div class="row justify-content-center">
     @foreach($categories as $category => $brandsList)
