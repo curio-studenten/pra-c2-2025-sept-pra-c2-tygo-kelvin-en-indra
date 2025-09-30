@@ -9,7 +9,7 @@
     @foreach($alphabet as $letter)
         @php
             $brandsForLetter = $brands->filter(function($brand) use ($letter) {
-                return strtoupper(substr($brand->name, 0, 1)) === $letter;
+                return (substr($brand->name, 0, 1)) == $letter;
             });
         @endphp
 

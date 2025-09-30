@@ -46,6 +46,11 @@ Route::get('/letter', function () {
     return view('pages.filtered_data');
 });
 
+Route::get('/greeting', function () {
+    return view('greeting', ['name' => 'Ty']);
+});
+
+
 Route::get('/manual/{language}/{brand_slug}/', [RedirectController::class, 'brand']);
 Route::get('/manual/{language}/{brand_slug}/brand.html', [RedirectController::class, 'brand']);
 

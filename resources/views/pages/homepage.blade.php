@@ -5,9 +5,6 @@
         <p>{{ __('introduction_texts.homepage_line_2') }}</p>
         <p>{{ __('introduction_texts.homepage_line_3') }}</p>
     </x-slot:introduction_text>
-
-    <h3>Hello, {{ $name }}</h3>
-
     <h1>
         <x-slot:title>
             {{ __('misc.all_brands') }}
