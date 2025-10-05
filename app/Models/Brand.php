@@ -19,6 +19,13 @@ class Brand extends Model
         return $this->hasMany(Manual::class);
     }
 
+    public function categories()
+{
+    return $this->belongsToMany(Category::class, 'brand_category');
+}
+
+    
+
     /**
      * Voor nette URL's (bijv. spaties vervangen door -)
      */
