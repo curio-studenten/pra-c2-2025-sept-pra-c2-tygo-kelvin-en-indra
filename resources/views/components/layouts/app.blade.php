@@ -74,6 +74,14 @@
                 {{ $slot }}
             @endif
 
+            <ul class="breadcrumb">
+                <li>
+                    <a href="/" title="{{ __('misc.home_alt') }}"
+                       alt="{{ __('misc.home_alt') }}">{{ __('misc.home') }}</a>
+                </li>
+                {{ $breadcrumb ?? '' }}
+
+            </ul>
         </div>
     </div>
 </div>
