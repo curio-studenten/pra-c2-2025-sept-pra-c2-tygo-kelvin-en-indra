@@ -54,6 +54,9 @@
                 ]
             ];
         @endphp
+<<<<<<< HEAD
+>>>>>>> parent of d0e3f43 (fixed footer at homepage)
+=======
 >>>>>>> parent of d0e3f43 (fixed footer at homepage)
 
     <div class="row justify-content-center">
