@@ -29,7 +29,32 @@
                 @endforeach
             </ol>
         </div>
+<<<<<<< HEAD
     </div>
+=======
+
+        @php
+            $categories = [
+                'Telefoons & Mobiele apparaten' => [
+                    'ALCATEL Mobile Phones','Apple','BenQ','Huawei','LG Electronics',
+                    'Lenovo','Motorola','Palm','Pantech','Samsung','Sony','ZTE'
+                ],
+                'Computers & Elektronica' => [
+                    'AOC','AT&T','Aastra Telecom','Carl Zeiss','Citizen','Dell',
+                    'Fujitsu','GE (General Electric)','Garmin','IOGear','Kowa',
+                    'Toshiba','Uniden','VTech'
+                ],
+                'Audio & Geluid' => [
+                    'Crown Audio','DCM Speakers','DigiTech','JBL','MTX Audio',
+                    'Musica','Pioneer','RCA','Samson','Yamaha'
+                ],
+                'Specialized / Overige Technologie' => [
+                    'Furuno','Grizzly','Humminbird','Kohler','Land Pride',
+                    'ProForm','TPI Corporation'
+                ]
+            ];
+        @endphp
+>>>>>>> parent of d0e3f43 (fixed footer at homepage)
 
     <div class="row justify-content-center">
         @foreach($categories as $category)
