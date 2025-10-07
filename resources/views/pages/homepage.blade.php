@@ -29,7 +29,10 @@
                 @endforeach
             </ol>
         </div>
+<<<<<<< HEAD
     </div>
+=======
+
         @php
             $categories = [
                 'Telefoons & Mobiele apparaten' => [
@@ -51,6 +54,23 @@
                 ]
             ];
         @endphp
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of d0e3f43 (fixed footer at homepage)
+=======
+>>>>>>> parent of d0e3f43 (fixed footer at homepage)
+=======
+>>>>>>> parent of d0e3f43 (fixed footer at homepage)
+=======
+>>>>>>> parent of d0e3f43 (fixed footer at homepage)
+=======
+>>>>>>> parent of d0e3f43 (fixed footer at homepage)
+=======
+>>>>>>> parent of d0e3f43 (fixed footer at homepage)
+
     <div class="row justify-content-center">
         @foreach($categories as $category)
             <div class="col-md-6 mb-4">
