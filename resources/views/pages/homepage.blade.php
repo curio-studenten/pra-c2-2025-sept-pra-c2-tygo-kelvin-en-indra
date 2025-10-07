@@ -56,6 +56,9 @@
         @endphp
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of d0e3f43 (fixed footer at homepage)
+=======
 >>>>>>> parent of d0e3f43 (fixed footer at homepage)
 =======
 >>>>>>> parent of d0e3f43 (fixed footer at homepage)
