@@ -51,7 +51,6 @@
                 ]
             ];
         @endphp
-<<<<<<< HEAD
     <div class="row justify-content-center">
         @foreach($categories as $category)
             <div class="col-md-6 mb-4">
@@ -60,18 +59,6 @@
                     <h2>{{ $category->name }}</h2>
                     <ul>
                         @foreach($category->brands as $brand)
-=======
-
-<div class="row justify-content-center">
-    @foreach($categories as $category => $brandsList)
-        <div class="col-md-6 mb-4">
-            <div class="category-block">
-                <span class="decor-extra"></span>
-                <h2>{{ $category }}</h2>
-                <ul>
-                    @foreach($brands as $brand)
-                        @if(in_array($brand->name, $brandsList))
->>>>>>> parent of d0e3f43 (fixed footer at homepage)
                             <li>
                                 <a href="/{{ $brand->id }}/{{ $brand->getNameUrlEncodedAttribute() }}/">
                                     <button>{{ $brand->name }}</button>
