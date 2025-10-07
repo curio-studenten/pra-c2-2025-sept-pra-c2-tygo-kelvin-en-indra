@@ -11,7 +11,7 @@
     </div>
 
     <div class="aboutUs">
-        <a href="http://stackoverflow.com"><button>Over ons</button></a>
+        <a href="https://www.youtube.com/watch?v=dVE_aSQx1Cw&list=PLVYHGUK5smzH_uuPOk8UjKLzX-3QuLLy2"><button>Over ons</button></a>
     </div>
 
      <div class="socialMedia">
