@@ -12,12 +12,14 @@
       .container {
         margin: 0 auto;
       }
+
       .footer {
         background-color: gainsboro;
-        padding: 50px;
-        width: 100%;
+        padding: 30px;
+        width: auto;
         margin-top: auto;
       }
+
     .leaderboard-brands {
       font-size: 0.75rem;
       height: 200px;
