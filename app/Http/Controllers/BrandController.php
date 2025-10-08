@@ -2,25 +2,31 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Brand;
 use App\Models\Manual;
 
 class BrandController extends Controller
 {
-   public function show($brand_id, $brand_slug)
-{
-    $brand = Brand::findOrFail($brand_id);
+    public function index()
+    {
+        $brands = Brand::all()->groupBy('category');
+        $top10Manuals = Manual::orderByDesc('visits')->take(10)->get();
 
-    $manuals = $brand->manuals;
+        return view('pages.homepage', [
+            'brandsByCategory' => $brands,
+            'top10Manuals' => $top10Manuals
+        ]);
+    }
 
-    $top5Manuals = Manual::orderByDesc('visits')->where('brand_id', $brand_id)->take(5)->get();
+    public function show($brand_id, $brand_slug)
+    {
+        $brand = Brand::findOrFail($brand_id);
+        $manuals = $brand->manuals;
+        $top5Manuals = Manual::where('brand_id', $brand_id)
+            ->orderByDesc('visits')
+            ->take(5)
+            ->get();
 
-    return view('pages.brand_view', [
-        'brand' => $brand,
-        'manuals' => $manuals,
-        'top5Manuals' => $top5Manuals
-    ]);
-}
-
+        return view('pages.brand_view', compact('brand', 'manuals', 'top5Manuals'));
+    }
 }
