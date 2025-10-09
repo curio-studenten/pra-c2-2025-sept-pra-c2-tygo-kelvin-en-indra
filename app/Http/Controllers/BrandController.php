@@ -18,11 +18,11 @@ class BrandController extends Controller
         ]);
     }
 
-    public function show($brand_id, $brand_slug)
+    public function show($name)
     {
-        $brand = Brand::findOrFail($brand_id);
+        $brand = Brand::where('name',$name)->first();
         $manuals = $brand->manuals;
-        $top5Manuals = Manual::where('brand_id', $brand_id)
+        $top5Manuals = Manual::where('brand_id', $brand->id)
             ->orderByDesc('visits')
             ->take(5)
             ->get();

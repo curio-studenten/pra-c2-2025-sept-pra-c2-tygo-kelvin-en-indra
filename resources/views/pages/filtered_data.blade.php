@@ -41,7 +41,7 @@
                     <ul>
                         @foreach($brandsForLetter as $brand)
                             <li>
-                                <a href="/{{ $brand->id }}/{{ $brand }}/">
+                                <a href="/brand/{{ $brand->name }}/">
                                     <button>{{ $brand->name }}</button>
                                 </a>
                             </li>

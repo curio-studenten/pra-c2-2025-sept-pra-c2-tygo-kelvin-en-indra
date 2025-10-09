@@ -32,7 +32,7 @@
                     <ul>
                         @foreach($brands as $brand)
                             <li>
-                                <a href="/{{ $brand->id }}/{{ $brand->getNameUrlEncodedAttribute() }}/">
+                                <a href="/brand/{{ $brand->name }}/">
                                     <button>{{ $brand->name }}</button>
                                 </a>
                             </li>
