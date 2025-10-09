@@ -24,6 +24,8 @@ class Brand extends Model
      */
     public function getNameUrlEncodedAttribute()
     {
-        return urlencode($this->name);
+        return urlencode(string: $this->name);
+
     }
+
 }

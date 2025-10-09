@@ -6,7 +6,7 @@
 
     <x-slot:breadcrumb>
         <li><a href="/">{{ __('misc.all_brands') }}</a></li>
-        <li><a href="/{{ $brand->id }}/{{ $brand->getNameUrlEncodedAttribute() }}/">{{ $brand->name }}</a></li>
+        <li><a href="/{{ $brand->id }}/{{ $brand}}/">{{ $brand->name }}</a></li>
     </x-slot:breadcrumb>
 
     <h1>Meest bekeken manuals! </h1>
@@ -14,7 +14,7 @@
         @foreach ( $top5Manuals as $manual)
         <li>
             @if ($manual->locally_available)
-                <a href="/{{ $brand->id }}/{{ $brand->getNameUrlEncodedAttribute() }}/{{ $manual->id }}/">
+                <a href="/brand/{{ $manual->brand->getNameUrlEncodedAttribute()}}/{{ $manual->id }}/">
                     {{ $manual->name }}
                 </a>
             @else
@@ -33,11 +33,11 @@
         @foreach ($manuals as $manual)
             <li>
                 @if ($manual->locally_available)
-                    <a href="/{{ $brand->id }}/{{ $brand->getNameUrlEncodedAttribute() }}/{{ $manual->id }}/">
+                        <a href="/brand/{{ $manual->brand->getNameUrlEncodedAttribute() }}/{{ $manual->id }}/">
                         {{ $manual->name }}
                     </a>
                 @else
-                    <a href="{{ $manual->url }}" target="new">{{ $manual->name }}</a>
+                        <a href="/brand/{{ $manual->brand}}/{{ $manual->id }}/">
                 @endif
 
                 – bekeken: {{ $manual->visits }} keer

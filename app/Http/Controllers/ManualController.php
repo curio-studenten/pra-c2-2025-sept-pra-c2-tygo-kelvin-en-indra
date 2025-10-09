@@ -8,9 +8,12 @@ use App\Models\Manual;
 
 class ManualController extends Controller
 {
-    public function show($brand_id, $brand_slug, $manual_id )
+    public function show($name, $manual_id )
     {
-        $brand = Brand::findOrFail($brand_id);
+
+        $name = strstr( "+"," ",$name);
+        $brand = Brand::where('name',$name)->first();
+        $manuals = $brand->manuals;
         $manual = Manual::findOrFail($manual_id);
         $manual->increment('visits');
 

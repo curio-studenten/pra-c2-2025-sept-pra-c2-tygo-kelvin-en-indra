@@ -44,6 +44,6 @@ Route::get('/language/{language_slug}/', [LocaleController::class, 'changeLocale
 
 Route::get('/brand/{name}/', [BrandController::class, 'show']);
 
-Route::get('/{brand_id}/{brand_slug}/{manual_id}/', [ManualController::class, 'show']);
+Route::get('/brand/{name}/{manual_id}/', [ManualController::class, 'show']);
 
 Route::get('/generateSitemap/', [SitemapController::class, 'generate']);

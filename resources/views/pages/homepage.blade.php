@@ -15,7 +15,7 @@
             <ol>
                 @foreach($top10Manuals as $manual)
                     <li>
-                        <a href="/{{ $manual->brand_id }}/{{ $manual->brand->getNameUrlEncodedAttribute() }}/{{ $manual->id }}/">
+                        <a href="/brand/{{ $manual->brand->getNameUrlEncodedAttribute() }}/{{ $manual->id }}/">
                             {{ $manual->name }}
                         </a> – {{ $manual->visits }} keer bekeken
                     </li>
@@ -32,7 +32,7 @@
                     <ul>
                         @foreach($brands as $brand)
                             <li>
-                                <a href="/brand/{{ $brand->name }}/">
+                                <a href="{{ url('brand/' . str_replace(' ', '+', $brand->name)) }}">
                                     <button>{{ $brand->name }}</button>
                                 </a>
                             </li>

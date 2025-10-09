@@ -20,12 +20,13 @@ class BrandController extends Controller
 
     public function show($name)
     {
-        $brand = Brand::where('name',$name)->first();
+        $name = urldecode($name); // converts %20 to space
+        $brand = Brand::where('name', $name)->firstOrFail();
         $manuals = $brand->manuals;
         $top5Manuals = Manual::where('brand_id', $brand->id)
-            ->orderByDesc('visits')
-            ->take(5)
-            ->get();
+                            ->orderByDesc('visits')
+                            ->take(5)
+                            ->get();
 
         return view('pages.brand_view', compact('brand', 'manuals', 'top5Manuals'));
     }

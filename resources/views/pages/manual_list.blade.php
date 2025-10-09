@@ -10,7 +10,7 @@
     </x-slot:head>
 
     <x-slot:breadcrumb>
-        <li><a href="/{{ $brand->id }}/{{ $brand->getNameUrlEncodedAttribute() }}/" alt="Manuals for '{{$brand->name}}'" title="Manuals for '{{$brand->name}}'">{{ $brand->name }}</a></li>
+        <li><a href="/brand/{{ $manual->brand->getNameUrlEncodedAttribute() }}/{{ $manual->id }}/"></li>
     </x-slot:breadcrumb>
 
 
@@ -22,8 +22,7 @@
         @foreach ($manuals as $manual)
 
             @if ($manual->locally_available)
-                <a href="/{{ $brand->id }}/{{ $brand->getNameUrlEncodedAttribute() }}/{{ $manual->id }}/" alt="{{ $manual->name }}" title="{{ $manual->name }}">{{ $manual->name }}</a>
-                ({{$manual->filesize_human_readable}})
+                <a href="/brand/{{ $manual->brand->getNameUrlEncodedAttribute()}}/{{ $manual->id }}/">
             @else
                 <a href="{{ $manual->url }}" target="new" alt="{{ $manual->name }}" title="{{ $manual->name }}">{{ $manual->name }}</a>
             @endif
